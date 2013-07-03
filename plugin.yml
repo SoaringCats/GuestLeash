@@ -1,0 +1,22 @@
+name: GuestLeash
+version: 1.0
+description: Allows players to put other players on leashes.
+author: jamietech
+website: http://d.jamiete.ch
+main: ch.jamiete.guestleash.GuestLeash
+
+commands:
+  leash:
+    description: GuestLeash commands
+    usage: /leash help
+
+permissions:
+  leash.request:
+    description: Use /leash request <name>
+    default: op
+  leash.respond:
+    description: Use /leash accept, /leash deny and /leash leave
+    default: true
+  leash.force:
+    description: Use /leash force <name>
+    default: op
